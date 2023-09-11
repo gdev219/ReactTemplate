@@ -1,0 +1,9 @@
+{
+  "name": "@gdev219/service2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@gdev219/common": "workspace:^"
+  }
+}
