@@ -9,6 +9,7 @@ This Template built under vite. mono repo(Multi module) using yarn workspace and
 - **Storybook for testing components**
 - **Zustand for global state**
 - **You can build the project various development environment (local, develop, production ...) using .env\[mode]**
+- **Yarn-berry Zero install**
   <br/>
 
 > **The goal for This Project is Simple to use**
@@ -41,18 +42,6 @@ yarn add @gdev219/common
   "dependencies": {
     "@gdev219/common": "workspace:^"
   }
-}
-```
-
-## Deploy Project
-
-We are using vite as a build tool. each of package has its own build command in package.json. for your convinience you can specify your own build command for each project on top of package.
-
-```json
-"scripts": {
-    "storybook": "yarn workspace @gdev219/common storybook",
-    "local:service1": "yarn workspace @gdev219/service1 dev",
-    "build-dev:service1": "yarn workspace @gdev219/service1 build:dev"
 }
 ```
 
@@ -95,6 +84,18 @@ create<GlobalState>()(
     },
   ),
 );
+```
+
+## Build Project
+
+We are using vite as a build tool. each of package has its own build command in package.json. for your convinience you can specify your own build command for each project on top of package.
+
+```json
+"scripts": {
+    "storybook": "yarn workspace @gdev219/common storybook",
+    "local:service1": "yarn workspace @gdev219/service1 dev",
+    "build-dev:service1": "yarn workspace @gdev219/service1 build:dev"
+}
 ```
 
 ## Source Structure
