@@ -56,6 +56,47 @@ We are using vite as a build tool. each of package has its own build command in 
 }
 ```
 
+## State Management
+
+In a production environment, it's common to encounter various states scattered across our components. To mitigate this, it's advisable to keep the components as pure as possible and rely on the store solely for managing global states, such as tokens and user information.
+
+**Zustand [🔗](https://github.com/pmndrs/zustand)**
+
+out global states is consist of bunch of slices
+
+```typescript
+export const createUserSlice: StateCreator<GlobalState, [], [], UserSlice> = (set, get) => ({
+  user: {
+    id: '',
+  },
+  updateUser: () => set((state) => ({ user: state.user })),
+  getIsLoggedIn: () => {
+    const user = get().user;
+    return !!Object.keys(user);
+  },
+});
+```
+
+you can add new slice with **StateCreator**
+and also simply persist some state to storage you wang by using partialize
+
+```typescript
+create<GlobalState>()(
+  persist(
+    (...state) => ({
+      ...createTokenSlice(...state),
+      ...createUserSlice(...state),
+    }),
+    {
+      name: 'gdev219',
+      partialize: (state) => {
+        return { tokens: state.tokens };
+      },
+    },
+  ),
+);
+```
+
 ## Source Structure
 
 ```
