@@ -47,5 +47,5 @@ function callPurge() {
 
     echo "SIGNATURE=$SIGNATURE"
 
-    curl -X POST -H "Content-Type: application/json" -H "x-ncp-iam-access-key:$ACCESSKEY" -H "x-ncp-apigw-timestamp:$TIMESTAMP" -H "x-ncp-apigw-signature-v2:$SIGNATURE" -d '{"profileId":233, "edgeId":475, "purgeType":"ALL"}' "https://edge.apigw.ntruss.com$URI"
+    curl -X POST -H "Content-Type: application/json" -H "x-ncp-iam-access-key:$ACCESSKEY" -H "x-ncp-apigw-timestamp:$TIMESTAMP" -H "x-ncp-apigw-signature-v2:$SIGNATURE" -d '{"profileId":profileId, "edgeId":edgeId, "purgeType":"ALL"}' "https://edge.apigw.ntruss.com$URI"
 }

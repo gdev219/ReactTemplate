@@ -16,8 +16,8 @@ jobs:
         run: yarn build-dev:service1
       - name: Deploy to S3
         env:
-          AWS_ACCESS_KEY_ID: 'DluNEs2MzwVcj2xH8HF1'
-          AWS_SECRET_ACCESS_KEY: 'NfVcvPC65N0Vf7ETpcmouhHlFEsldxyrVP5yIIwe'
+          AWS_ACCESS_KEY_ID: 'AWS_ACCESS_KEY_ID'
+          AWS_SECRET_ACCESS_KEY: 'AWS_SECRET_ACCESS_KEY'
           AWS_REGION: 'us-east-1'
         run: |
           aws --endpoint-url=https://kr.object.ncloudstorage.com s3 cp --recursive packages/service1/dist s3://gdev219-static
