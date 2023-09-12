@@ -5,7 +5,7 @@ import eslint from 'vite-plugin-eslint';
 export default ({ mode }) => {
   const config = {
     plugins: [react(), eslint({ cache: false })],
-
+    base: '/',
     resolve: {
       alias: { '@': '/src' },
     },
@@ -15,6 +15,7 @@ export default ({ mode }) => {
     Object.assign(
       config,
       {
+        base: '/ReactTemplate',
         server: {
           proxy: {
             '/api': { target: process.env.VITE_API_URL, changeOrigin: true },
