@@ -20,6 +20,7 @@ export default function PageGridLayout({ header, filter, grid, pagination, contr
     },
     [isOpen],
   );
+  console.log('control', control);
   return (
     <>
       <Paper sx={{ display: 'flex', background: 'inherit' }}>
