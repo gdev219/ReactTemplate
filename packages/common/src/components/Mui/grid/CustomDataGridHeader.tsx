@@ -18,7 +18,7 @@ export interface ICustomDataGridHeaderProps {
   count: GridHeaderCount;
   sortList?: GridHeaderSort[];
   sortSlot?: ReactNode;
-  onSelectSort: (sort: GridHeaderSort) => void;
+  onSelectSort?: (sort: GridHeaderSort) => void;
 }
 
 const COUNTER_MAP: Record<string, string> = { total: '전체', search: '검색', select: '선택' };
@@ -28,7 +28,7 @@ export default function CustomDataGridHeader({ count, sortList, sortSlot, onSele
   const handleSortChange = function (event: SelectChangeEvent) {
     const value = event.target.value as string;
     setSort(sortList?.find((v) => v.value === value) || { title: '', value: '' });
-    onSelectSort(sort);
+    if (typeof onSelectSort === 'function') onSelectSort(sort);
   };
 
   return (
