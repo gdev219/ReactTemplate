@@ -14,9 +14,10 @@ This Template built under vite. mono repo(Multi module) using yarn workspace and
 
 > **The goal for This Project is Simple to use**
 
-## Installation
+## Get started
 
-It requires yarn-berry(yarn3) to install nothing but just yarn to install dependancies.
+Clone this repository to your system.
+It requires Yarn Berry (Yarn 3) for installation, but you can simply use Yarn to install dependencies at the root level of the package with the following
 
 ```sh
 yarn
@@ -42,6 +43,15 @@ yarn add @gdev219/common
   "dependencies": {
     "@gdev219/common": "workspace:^"
   }
+}
+```
+
+Don't forget to add <code>tsconfig.json</code> your new package
+
+```json
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["assets", "src", "index.ts", "../../types", "src/types"]
 }
 ```
 
