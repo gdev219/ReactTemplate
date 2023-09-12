@@ -86,6 +86,73 @@ create<GlobalState>()(
 );
 ```
 
+## MUI [🔗](https://mui.com/)
+
+Customize MUI theme pallette.
+
+```typescript
+export const theme = createTheme(customTheme, {
+  palette: {
+    page: customTheme.palette.augmentColor({
+      color: { main: '#F5F6F8' },
+      name: 'page',
+    }),
+  },
+});
+```
+
+Customize MUI component using styled engine
+
+```typescript
+const StyledDialog = styled(Dialog)(() => ({
+  '& .MuiPaper-root': {
+    padding: '40px',
+  },
+}));
+```
+
+## Useful built-in components
+
+<H4>BaseIcon</H4>
+
+BaseIcon component read files(.svg) from file system using <code>import.meta.glob</code>
+
+<H4>BaseMenu</H4>
+
+Recursive components that support an infinitely deep tree of menus.
+
+<H4>PageGridLayout</H4>
+
+With PageGridLayout component you can build Page consist of Grid,Search,Filter with just insulting slots.
+
+```tsx
+<PageGridLayout
+  filter={<CustomDataGridFilter filters={filters} onChangeFilters={handleChangeFilters} />}
+  header={
+    <CustomDataGridHeader
+      count={{ select: selectCount, search: 0, total: 0 }}
+      sortList={[
+        { title: '최신순', value: 'new' },
+        { title: '등록일순', value: 'old' },
+      ]}
+    />
+  }
+  grid={
+    <DataGrid
+      apiRef={apiRef}
+      rows={rows}
+      columns={columns}
+      hideFooterPagination
+      checkboxSelection
+      disableRowSelectionOnClick
+      disableColumnFilter
+      hideFooter
+    />
+  }
+  pagination={<CustomDataGridPagination variant="text" count={10} defaultPage={10} boundaryCount={10} />}
+/>
+```
+
 ## Build Project
 
 We are using vite as a build tool. each of package has its own build command in package.json. for your convinience you can specify your own build command for each project on top of package.
