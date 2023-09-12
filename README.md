@@ -23,6 +23,12 @@ It requires Yarn Berry (Yarn 3) for installation, but you can simply use Yarn to
 yarn
 ```
 
+**start demo service**
+
+```sh
+yarn local:service1
+```
+
 ## Create new package
 
 ```sh
