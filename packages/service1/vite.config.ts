@@ -11,7 +11,7 @@ export default ({ mode }) => {
     },
   };
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
-  if (mode === 'development') {
+  if (mode === 'production') {
     Object.assign(
       config,
       {

@@ -10,7 +10,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import './index.scss';
 import { routes } from './router/routes';
 
-const router = createBrowserRouter(routes, {});
+const router = createBrowserRouter(routes, { basename: import.meta.env.DEV ? '/' : '/ReactTemplate/' });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
