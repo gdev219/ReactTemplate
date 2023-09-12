@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
+  "homepage": "https://gdev219.github.io/ReactTemplate",
   "workspaces": [
     "packages/*"
   ],
