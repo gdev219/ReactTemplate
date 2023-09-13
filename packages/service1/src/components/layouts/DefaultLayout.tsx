@@ -191,39 +191,14 @@ export const DefaultLayout = function () {
                       iconComponent: <Folder sx={{ color: '#fff' }} />,
                       items: [
                         {
-                          id: 'child1',
-                          link: '/child1',
+                          id: 'design',
+                          link: '/design',
                           title: '메뉴1',
                         },
                         {
-                          id: 'child2',
-                          link: '/child2',
-                          title: '메뉴2',
-                        },
-                        {
-                          id: 'child3',
-                          link: '/child3',
-                          title: '메뉴3',
-                        },
-                        {
-                          id: 'child4',
-                          link: '/child4',
-                          title: '메뉴4',
-                        },
-                        {
-                          id: 'child5',
-                          link: '/child5',
-                          title: '메뉴5',
-                        },
-                        {
-                          id: 'child6',
-                          link: '/child6',
-                          title: '메뉴6',
-                        },
-                        {
-                          id: 'child7',
-                          link: '/child7',
-                          title: '메뉴7',
+                          id: 'child1',
+                          link: '/child1',
+                          title: '메뉴1',
                         },
                       ],
                     },

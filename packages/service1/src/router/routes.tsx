@@ -1,6 +1,7 @@
 import { FETCH_USER } from '../api/user';
 import { DefaultLayout } from '../components/layouts/DefaultLayout';
 import { FullSizeLayout } from '../components/layouts/FullSizeLayout';
+import Design from '../pages/Design/Design.page';
 import Login from '../pages/Login/Login.page';
 import Main from '../pages/Main/Main.page';
 import { useBoundStore } from '../store';
@@ -47,39 +48,14 @@ export const routes = [
     loader: fetchUser,
     children: [
       {
-        path: '/child1',
-        element: <Main />,
-        title: '메뉴1',
+        path: '/design',
+        element: <Design />,
+        title: '디자인',
       },
       {
         path: '/child2',
         element: <Main />,
         title: '메뉴2',
-      },
-      {
-        path: '/child3',
-        element: <Main />,
-        title: '메뉴3',
-      },
-      {
-        path: '/child4',
-        element: <Main />,
-        title: '메뉴4',
-      },
-      {
-        path: '/child5',
-        element: <Main />,
-        title: '메뉴5',
-      },
-      {
-        path: '/child6',
-        element: <Main />,
-        title: '메뉴6',
-      },
-      {
-        path: '/child7',
-        element: <Main />,
-        title: '총메뉴7',
       },
     ],
   },
