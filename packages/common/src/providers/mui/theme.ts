@@ -10,7 +10,7 @@ const customTheme = createTheme(
     // tonalOffset, contrast threshold goes here
     typography: {
       fontFamily:
-        '"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
+        '-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;',
       h1: {
         fontSize: '2.5rem',
         fontWeight: '800',

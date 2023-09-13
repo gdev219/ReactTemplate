@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import 'pretendard/dist/web/variable/pretendardvariable.css';
-
 import { HelmetProvider } from 'react-helmet-async';
 import './index.scss';
 import { routes } from './router/routes';
