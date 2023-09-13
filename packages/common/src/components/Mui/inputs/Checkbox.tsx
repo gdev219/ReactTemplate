@@ -30,10 +30,10 @@ const CustomStyledCheckbox = styled(Checkbox)((props) => {
       fill: '#B7B7B7',
     },
     '&.Mui-disabled.Mui-checked .MuiSvgIcon-root': {
-      fill: '#B7B7B7',
+      fill: theme.palette.primary.main,
     },
     '&.Mui-checked .MuiSvgIcon-root': {
-      fill: theme.palette.primary2.main,
+      fill: theme.palette.primary.main,
     },
   };
 });

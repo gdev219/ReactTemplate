@@ -20,13 +20,13 @@ const BpIcon = styled('span')((props: CustomBpIconProps) => {
   };
 });
 
-const BpCheckedIcon = styled(BpIcon)((props: CustomBpIconProps) => {
-  const { disabled } = props;
+const BpCheckedIcon = styled(BpIcon)((props) => {
+  const { disabled, theme } = props;
   return {
     '&::after': {
       content: `''`,
       clipPath: 'circle(30%)',
-      background: disabled ? '#B7B7B7' : '#0072C6',
+      background: disabled ? '#B7B7B7' : theme.palette.primary.main,
       position: 'absolute',
       top: 0,
       left: 0,

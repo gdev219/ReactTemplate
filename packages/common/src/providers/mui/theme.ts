@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material';
-import { blueGrey } from '@mui/material/colors';
 import { koKR as coreKoKR } from '@mui/material/locale';
 import { koKR as dataGridKoKR } from '@mui/x-data-grid/locales';
 import LinkBehavior from '../../components/Mui/link/LinkBehavior';
@@ -137,7 +136,7 @@ const customTheme = createTheme(
 export const theme = createTheme(customTheme, {
   palette: {
     primary: customTheme.palette.augmentColor({
-      color: { main: blueGrey[500], contrastText: '#fff' },
+      color: { main: '#00A76F', contrastText: '#fff' },
       name: 'primary',
     }),
     background: {

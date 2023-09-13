@@ -18,34 +18,34 @@ type ComponentStyleMap<T> = {
 function Design() {
   const buttonMap: ComponentStyleMap<ButtonProps> = {
     large: [
-      { size: 'large', variant: 'contained', color: 'primary2' },
-      { size: 'large', variant: 'outlined', color: 'primary2' },
+      { size: 'large', variant: 'contained', color: 'primary' },
+      { size: 'large', variant: 'outlined', color: 'primary' },
       { size: 'large', variant: 'outlined', color: 'white' },
-      { size: 'large', variant: 'contained', disabled: true, color: 'primary2' },
+      { size: 'large', variant: 'contained', disabled: true, color: 'primary' },
     ],
     medium: [
-      { size: 'medium', variant: 'contained', color: 'primary2' },
-      { size: 'medium', variant: 'outlined', color: 'primary2' },
+      { size: 'medium', variant: 'contained', color: 'primary' },
+      { size: 'medium', variant: 'outlined', color: 'primary' },
       { size: 'medium', variant: 'outlined', color: 'white' },
-      { size: 'medium', variant: 'contained', disabled: true, color: 'primary2' },
+      { size: 'medium', variant: 'contained', disabled: true, color: 'primary' },
     ],
     small: [
-      { size: 'small', variant: 'contained', color: 'primary2' },
-      { size: 'small', variant: 'outlined', color: 'primary2' },
+      { size: 'small', variant: 'contained', color: 'primary' },
+      { size: 'small', variant: 'outlined', color: 'primary' },
       { size: 'small', variant: 'outlined', color: 'white' },
-      { size: 'small', variant: 'contained', disabled: true, color: 'primary2' },
+      { size: 'small', variant: 'contained', disabled: true, color: 'primary' },
     ],
     extraSmall: [
-      { size: 'extraSmall', variant: 'contained', color: 'primary2' },
-      { size: 'extraSmall', variant: 'outlined', color: 'primary2' },
+      { size: 'extraSmall', variant: 'contained', color: 'primary' },
+      { size: 'extraSmall', variant: 'outlined', color: 'primary' },
       { size: 'extraSmall', variant: 'outlined', color: 'white' },
-      { size: 'extraSmall', variant: 'contained', disabled: true, color: 'primary2' },
+      { size: 'extraSmall', variant: 'contained', disabled: true, color: 'primary' },
     ],
     mini: [
-      { size: 'mini', variant: 'contained', color: 'primary2' },
-      { size: 'mini', variant: 'outlined', color: 'primary2' },
+      { size: 'mini', variant: 'contained', color: 'primary' },
+      { size: 'mini', variant: 'outlined', color: 'primary' },
       { size: 'mini', variant: 'outlined', color: 'white' },
-      { size: 'mini', variant: 'contained', disabled: true, color: 'primary2' },
+      { size: 'mini', variant: 'contained', disabled: true, color: 'primary' },
     ],
   };
 
