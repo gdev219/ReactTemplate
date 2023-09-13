@@ -14,6 +14,10 @@ This Template built under vite. mono repo(Multi module) using yarn workspace and
 
 > **The goal for This Project is Simple to use**
 
+## DEMO
+
+https://gdev219.github.io/ReactTemplate
+
 ## Get started
 
 Clone this repository to your system.
@@ -23,7 +27,7 @@ It requires Yarn Berry (Yarn 3) for installation, but you can simply use Yarn to
 yarn
 ```
 
-**start demo service**
+**start service**
 
 ```sh
 yarn local:service1
