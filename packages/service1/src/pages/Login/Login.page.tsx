@@ -62,12 +62,12 @@ function Login() {
           }}
         >
           <BaseSpinner loading={isLoading}></BaseSpinner>
-          <Typography variant="h2" component="h2" color="primary.main">
+          <Typography variant="h2" component="h2" color="primary.main" sx={{ mb: 2 }}>
             로그인
           </Typography>
           <FormControl variant="standard" fullWidth>
             <List sx={{ width: '100%' }} disablePadding>
-              <ListItem sx={{ mb: 4 }}>
+              <ListItem sx={{ mb: 2 }}>
                 <TextField
                   inputRef={idInputRef}
                   label="아이디"
@@ -77,7 +77,7 @@ function Login() {
                   fullWidth
                 ></TextField>
               </ListItem>
-              <ListItem sx={{ mb: 8 }}>
+              <ListItem sx={{ mb: 4 }}>
                 <TextField
                   type="password"
                   inputRef={passwordInputRef}
@@ -88,12 +88,12 @@ function Login() {
                   fullWidth
                 ></TextField>
               </ListItem>
-              <ListItem sx={{ width: '100%' }}>
+              <ListItem sx={{ width: '100%', mb: 2 }}>
                 <Button fullWidth type="submit" onClick={handleClickLogin} color="primary" disabled={isLoading}>
                   로그인
                 </Button>
               </ListItem>
-              <ListItem sx={{ alignItems: 'flex-end' }}>l
+              <ListItem sx={{ justifyContent: 'flex-end' }}>
                 <Link component="button">비밀번호 변경</Link>
               </ListItem>
             </List>
