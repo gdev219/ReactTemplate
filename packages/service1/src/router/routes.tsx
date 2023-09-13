@@ -8,7 +8,7 @@ import { useBoundStore } from '../store';
 import { CustomRouteObject } from '../types';
 import { redirect } from 'react-router-dom';
 
-export const defaultRedirectURL = '/child1';
+export const defaultRedirectURL = '/design';
 
 const fetchUser = async () => {
   try {
@@ -50,7 +50,7 @@ export const routes = [
       {
         path: '/design',
         element: <Design />,
-        title: '디자인',
+        title: 'Design Template',
       },
       {
         path: '/child2',

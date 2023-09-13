@@ -193,7 +193,7 @@ export const DefaultLayout = function () {
                         {
                           id: 'design',
                           link: '/design',
-                          title: '메뉴1',
+                          title: 'Design Template',
                         },
                         {
                           id: 'child1',
